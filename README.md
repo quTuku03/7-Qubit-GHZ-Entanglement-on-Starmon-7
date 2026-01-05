@@ -34,4 +34,4 @@ Create a jupyter notebook and enter the following
 backend = provider.get_backend(name=backend_name)
 5. %matplotlib inline
 %run GHZ_test.py 
-6. enter your qi profile via https://www.quantum-inspire.com/ and search for your project (Program created by SDK)
+6. enter your qi profile via **https://www.quantum-inspire.com/** and search for your project (Program created by SDK)
