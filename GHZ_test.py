@@ -7,21 +7,21 @@ from qiskit_quantuminspire.qi_provider import QIProvider
 provider = QIProvider()
 backend = provider.get_backend("Starmon-7")
 
-# Create 7-qubit GHZ circuit
+# Creates a 7-qubit GHZ circuit
 qc = QuantumCircuit(7, 7)
 qc.h(0)
 for i in range(6):
     qc.cx(i, i+1)
 qc.measure(range(7), range(7))
 
-# Show circuit diagram
+# Circuit diagram
 print("GHZ Circuit:")
 print(qc.draw(output='text'))
 qc.draw(output='mpl')
 plt.title("7-qubit GHZ Circuit")
 plt.show()
 
-# Run on quantum backend
+# Quantum backend
 transpiled_qc = transpile(qc, backend=backend)
 job = backend.run(transpiled_qc, shots=1024)
 result = job.result()
