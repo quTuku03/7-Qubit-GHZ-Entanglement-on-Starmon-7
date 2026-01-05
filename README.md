@@ -7,7 +7,7 @@ We create a state where 7 qubits are entangled such that they are all in the $|0
 
 The ket state is:
 
-$$|\text{GHZ}\rangle = \frac{|0000000\rangle + |1111111\rangle}{\sqrt{2}}$$
+$$|\text{GHZ}\rangle = |\text{Ψ}\rangle = \frac{|0000000\rangle + |1111111\rangle}{\sqrt{2}}$$
 
 ### What to Expect
 1.  **Ideal Scenario:** We measure `0000000` 50% of the time and `1111111` 50% of the time.
