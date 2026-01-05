@@ -20,7 +20,8 @@ $$|\text{GHZ}\rangle = |\text{Ψ}\rangle = \frac{|0000000\rangle + |1111111\rang
 * https://en.wikipedia.org/wiki/Greenberger%E2%80%93Horne%E2%80%93Zeilinger_state
 
 ##  How to Run
-Create a jupyter notebook and enter the following
+Create a jupyter notebook and enter the following commands:
+
 1. !qi login "https://api.quantum-inspire.com"
 2. provider = QIProvider()
 3. provider.backends() (this command showcases the avaible backends/processors)
